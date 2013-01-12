@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+price = `curl -s 'http://download.finance.yahoo.com/d/quotes.csv?s=#{ARGV[0]}&f=l1'`
+puts "$#{price}"
